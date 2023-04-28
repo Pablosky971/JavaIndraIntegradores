@@ -8,6 +8,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,6 +19,7 @@ import entidades.Vuelo;
 public class PrevisionVuelos {
 	public static void main(String[] args) throws IOException {
 		List<Vuelo> vuelos = new ArrayList<>();
+		List<EmpresaAeronautica> empresas = new ArrayList<>();
 		List<String> informacionVuelos = new ArrayList<>();
 		String ruta = "C:\\Users\\pcallep\\Desktop\\GT3_JAVA_Integradores\\EjercicioIntegrador1\\";
 		String nombreArchivo = "vuelos.txt";
@@ -36,9 +38,10 @@ public class PrevisionVuelos {
 			e.printStackTrace();
 		}
 		
+		try {
 		
 		String nombreArchivoPrevision = "previsionVuelos.txt";
-		String rutaPrevisionVuelos= ruta + nombreArchivo;
+		String rutaPrevisionVuelos= ruta + nombreArchivoPrevision;
 		File archivoPrevision = new File(rutaPrevisionVuelos);
 		
 		// Manejo de excepciones al manejar archivos.
@@ -48,9 +51,33 @@ public class PrevisionVuelos {
 					archivoPrevision.createNewFile();
 					System.out.println("¡Se creo el fichero!");
 				
-				FileWriter fw = new FileWriter(archivoVuelos);
-				}
-				
+					FileWriter fw = new FileWriter(archivoPrevision);
+					BufferedWriter bufferedWriter = new BufferedWriter(fw);
+					int nEmpresas=1;
+					for(EmpresaAeronautica empresa: empresas) {
+						
+					bufferedWriter.write("Empresa " + nEmpresas + ": " + empresa.getNombreEmpresa());
+					nEmpresas++;
+					}
+					int nVuelos=1;
+					DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+					for(Vuelo vuelo: vuelos) {
+						
+						bufferedWriter.write("Vuelo " + nVuelos + ": " + vuelo.getNombreVuelo());
+						bufferedWriter.write("Empresa a la que pertenece: " + vuelo.getNombreEmpresa());
+						bufferedWriter.write("Cantidad de pasajeros: " + vuelo.getCantidadPasajeros());
+						bufferedWriter.write("Tipo de pasaje: " + vuelo.getTipoPasaje());
+						bufferedWriter.write("Valor unitario del pasaje " + vuelo.getValorUnitarioPasaje());
+						bufferedWriter.write("Fecha del vuelo " + vuelo.getFechaVuelo().format(dateTimeFormatter));
+						bufferedWriter.write("Rentabilidad: " + vuelo.getRentabilidad());
+						nVuelos++;
+						}
+					bufferedWriter.close();
+					}
+		}
+					catch(IOException e) {
+						e.printStackTrace();
+					}
 				
 		
  	}
@@ -99,6 +126,10 @@ public class PrevisionVuelos {
 		return empresas;
 	}
 
+//	public static Double montoFinalEmpresa(String nombreEmpresa) {
+//		
+//		
+//	}
 }
 	
 
