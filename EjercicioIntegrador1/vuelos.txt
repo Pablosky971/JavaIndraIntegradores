@@ -1,0 +1,5 @@
+Empresa,Iberia
+
+Vuelo,Iberia,España-Argentina,154,Económico,700.00,29-04-2023
+
+Vuelo,Iberia,Argentina-España,78,Premier,1500,05-05-2023
