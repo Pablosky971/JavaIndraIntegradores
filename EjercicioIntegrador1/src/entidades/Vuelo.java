@@ -24,6 +24,16 @@ public class Vuelo extends EmpresaAeronautica implements iVuelo{
 			Double valorUnitarioPasaje, LocalDate fechaVuelo) {
 		super(nombreEmpresa);
 		
+		this.nombreEmpresa=nombreEmpresa;
+		this.nombreVuelo = nombreVuelo;
+		this.cantidadPasajeros = cantidadPasajeros;
+		this.tipoPasaje = tipoPasaje;
+		this.valorUnitarioPasaje = valorUnitarioPasaje;
+		this.fechaVuelo = fechaVuelo;
+		segmentacion();
+		
+		
+		
 		
 	}
 	
@@ -52,7 +62,7 @@ public class Vuelo extends EmpresaAeronautica implements iVuelo{
 			break;
 		
 		case PREMIER:
-			if(valorFinalVuelo < 1500) {
+			if(valorFinalVuelo==1500.0) {
 				rentabilidad=Rentabilidad.A_CONFIRMAR;
 			} else {
 				rentabilidad=Rentabilidad.RENTABLE;
@@ -64,5 +74,7 @@ public class Vuelo extends EmpresaAeronautica implements iVuelo{
 		
 			
 		}
+
+
 
 }
