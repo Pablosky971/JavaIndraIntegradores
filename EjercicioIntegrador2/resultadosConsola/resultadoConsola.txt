@@ -1,0 +1,105 @@
+Lanzada por el usuario Pablosky
+Obtained EjercicioIntegrador2/Jenkinsfile from git https://github.com/Pablosky971/JavaIndraIntegradores
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins  in C:\ProgramData\Jenkins\.jenkins\workspace\EjercicioIntegrador2
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Checkout SCM)
+[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+using credential 81d70000-3615-4acb-b8ca-538b9e760206
+Cloning the remote Git repository
+Cloning repository https://github.com/Pablosky971/JavaIndraIntegradores
+ > C:\Program Files\Git\bin\git.exe init C:\ProgramData\Jenkins\.jenkins\workspace\EjercicioIntegrador2 # timeout=10
+Fetching upstream changes from https://github.com/Pablosky971/JavaIndraIntegradores
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+ > git --version # 'git version 2.40.0.windows.1'
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+You're using 'Known hosts file' strategy to verify ssh host keys, but your known_hosts file does not exist, please go to 'Manage Jenkins' -> 'Configure Global Security' -> 'Git Host Key Verification Configuration' and configure host key verification.
+ > C:\Program Files\Git\bin\git.exe fetch --tags --force --progress -- https://github.com/Pablosky971/JavaIndraIntegradores +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/Pablosky971/JavaIndraIntegradores # timeout=10
+ > C:\Program Files\Git\bin\git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision 6ab3aaea2f92c36f2b7389327e2541ae63b48689 (refs/remotes/origin/main)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f 6ab3aaea2f92c36f2b7389327e2541ae63b48689 # timeout=10
+Commit message: "Finalizada funcionalidad ejercicio integrador 2"
+First time build. Skipping changelog.
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Paella)
+[Pipeline] script
+[Pipeline] {
+[Pipeline] echo
+La receta Paella, tiene un tiempo de cocciÃ³n de: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] echo
+Ingrediente Aceite, cantidad: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] echo
+Ingrediente Cebolla, cantidad: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] echo
+Ingrediente Ajo, cantidad: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] echo
+Ingrediente Pimiento verde, cantidad: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] echo
+Ingrediente Pimiento rojo, cantidad: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] echo
+Ingrediente Calamares, cantidad: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] echo
+Ingrediente Vino blanco, cantidad: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] echo
+Ingrediente Tomate, cantidad: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] echo
+Ingrediente Arroz grano medio, cantidad: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] echo
+Ingrediente AzafrÃ¡n Molido ALICANTE, cantidad: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] echo
+Ingrediente Agua, cantidad: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] echo
+Ingrediente Mejillones, cantidad: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] echo
+Ingrediente Almejas, cantidad: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] echo
+Ingrediente Camarones, cantidad: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] echo
+Ingrediente Vieiras, cantidad: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] echo
+Ingrediente Berberechos, cantidad: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] echo
+Ingrediente Langostinos, cantidad: 17 minutos, ademÃ¡s, tiene 51 calorias.
+[Pipeline] }
+[Pipeline] // script
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Tortilla de patata)
+[Pipeline] script
+[Pipeline] {
+[Pipeline] echo
+La receta Tortilla de patata, tiene un tiempo de cocciÃ³n de: 5 minutos, ademÃ¡s, tiene 15 calorias.
+[Pipeline] echo
+Ingrediente Huevos medianos, cantidad: 5 minutos, ademÃ¡s, tiene 15 calorias.
+[Pipeline] echo
+Ingrediente Patatas, cantidad: 5 minutos, ademÃ¡s, tiene 15 calorias.
+[Pipeline] echo
+Ingrediente Aceite de oliva virgen extra, cantidad: 5 minutos, ademÃ¡s, tiene 15 calorias.
+[Pipeline] echo
+Ingrediente Media cebolla pequeÃ±a, cantidad: 5 minutos, ademÃ¡s, tiene 15 calorias.
+[Pipeline] echo
+Ingrediente Sal, cantidad: 5 minutos, ademÃ¡s, tiene 15 calorias.
+[Pipeline] }
+[Pipeline] // script
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
