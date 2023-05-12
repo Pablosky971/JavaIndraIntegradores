@@ -1,0 +1,41 @@
+pipeline {
+    agent any
+    stages {
+stage("Paella") {
+            steps {
+                script {
+                    println "La receta Paella, tiene un tiempo de cocción de: 17 minutos, además, tiene 51 calorias."
+                    println "Ingrediente Aceite, cantidad: 17 minutos, además, tiene 51 calorias."
+                    println "Ingrediente Cebolla, cantidad: 17 minutos, además, tiene 51 calorias."
+                    println "Ingrediente Ajo, cantidad: 17 minutos, además, tiene 51 calorias."
+                    println "Ingrediente Pimiento verde, cantidad: 17 minutos, además, tiene 51 calorias."
+                    println "Ingrediente Pimiento rojo, cantidad: 17 minutos, además, tiene 51 calorias."
+                    println "Ingrediente Calamares, cantidad: 17 minutos, además, tiene 51 calorias."
+                    println "Ingrediente Vino blanco, cantidad: 17 minutos, además, tiene 51 calorias."
+                    println "Ingrediente Tomate, cantidad: 17 minutos, además, tiene 51 calorias."
+                    println "Ingrediente Arroz grano medio, cantidad: 17 minutos, además, tiene 51 calorias."
+                    println "Ingrediente Azafrán Molido ALICANTE, cantidad: 17 minutos, además, tiene 51 calorias."
+                    println "Ingrediente Agua, cantidad: 17 minutos, además, tiene 51 calorias."
+                    println "Ingrediente Mejillones, cantidad: 17 minutos, además, tiene 51 calorias."
+                    println "Ingrediente Almejas, cantidad: 17 minutos, además, tiene 51 calorias."
+                    println "Ingrediente Camarones, cantidad: 17 minutos, además, tiene 51 calorias."
+                    println "Ingrediente Vieiras, cantidad: 17 minutos, además, tiene 51 calorias."
+                    println "Ingrediente Berberechos, cantidad: 17 minutos, además, tiene 51 calorias."
+                    println "Ingrediente Langostinos, cantidad: 17 minutos, además, tiene 51 calorias."
+                }
+            }
+        }
+stage("Tortilla de patata") {
+            steps {
+                script {
+                    println "La receta Tortilla de patata, tiene un tiempo de cocción de: 5 minutos, además, tiene 15 calorias."
+                    println "Ingrediente Huevos medianos, cantidad: 5 minutos, además, tiene 15 calorias."
+                    println "Ingrediente Patatas, cantidad: 5 minutos, además, tiene 15 calorias."
+                    println "Ingrediente Aceite de oliva virgen extra, cantidad: 5 minutos, además, tiene 15 calorias."
+                    println "Ingrediente Media cebolla pequeña, cantidad: 5 minutos, además, tiene 15 calorias."
+                    println "Ingrediente Sal, cantidad: 5 minutos, además, tiene 15 calorias."
+                }
+            }
+        }
+        }
+        }
